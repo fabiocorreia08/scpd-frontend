@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="container col-lg-2">  
+    <h2 class="text-uppercase margin-top-acesso">Acesso</h2>
+    <p>Faça login usando seu usuário</p>
+    <div class="card margin-top-card-acesso">
+      <div class="card-body">
+        <form class="form-group">
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          <div class="form-group">
+            <label for="username">Usuário:</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Usuário"
+              name="username" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Senha:</label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Senha"
+              name="password" autocomplete="off">
+          </div>
+          <button (click)=handleLogin() class="btn btn-success text-uppercase">Acessar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

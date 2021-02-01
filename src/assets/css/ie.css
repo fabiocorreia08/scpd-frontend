@@ -1,0 +1,42 @@
+/****************************************************************
+*****************************************************************
+
+	IE11 - *::-ms-backdrop,
+
+*****************************************************************
+****************************************************************/
+
+/******* Table *******/
+*::-ms-backdrop, .ui-datatable table
+{
+	table-layout: fixed !important;
+	padding: 5px;
+	-ms-table-layout: fixed !important;
+} 
+
+/****************************************************************
+*****************************************************************
+
+	IE10 - html[data-useragent*='MSIE 10.0'] 
+
+*****************************************************************
+****************************************************************/
+html[data-useragent*='MSIE'] .ui-datatable table
+{
+	table-layout: fixed !important;
+	
+}
+
+html[data-useragent*='MSIE'] .table-responsive {
+	overflow-x: inherit !important; 
+} 
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	   .ui-datatable table {
+		table-layout: fixed !important;
+	}
+	.table-responsive {
+		overflow-x: inherit !important; 
+	}
+
+}

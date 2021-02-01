@@ -1,0 +1,95 @@
+/*
+	Extra small devices (portrait phones, less than 34em)
+	No media query since this is the default in Bootstrap
+	*/
+
+	/* Small devices (landscape phones, 34em and up) */
+	@media (max-width: 22em)
+	{
+		/* Logo */
+		.logo
+		{
+			margin-bottom: 0;
+			padding: 0.5em 0;
+		}
+		/* menu - navbar */
+		.navbar-toggleable-xs .navbar-nav .nav-item
+		{
+			float: none;
+		}
+		.navbar-nav .nav-item+.nav-item,
+		.nav-item-first
+		{
+			margin-left: inherit;
+		}
+
+
+
+	}
+
+
+	@media (min-width: 22em)
+	{
+
+
+	}
+
+
+
+
+
+	@media (max-width: 34em)
+	{
+		/* Logo */
+		.logo
+		{
+			margin-bottom: 0;
+			padding: 0.5em 0;
+		}
+		/* menu - navbar */
+		.navbar-toggleable-xs .navbar-nav .nav-item
+		{
+			float: none;
+		}
+		.navbar-nav .nav-item+.nav-item,
+		.nav-item-first
+		{
+			margin-left: inherit;
+		}
+
+	}
+
+
+
+
+
+
+	/* Medium devices (tablets, 48em and up) */
+	@media (min-width: 48em)
+	{
+
+	}
+
+
+
+
+
+
+
+	/* Large devices (desktops, 62em and up) */
+	@media (min-width: 62em)
+	{
+
+	}
+
+
+
+
+
+
+
+	/* Extra large devices (large desktops, 75em and up) */
+	@media (min-width: 75em)
+	{
+
+	}

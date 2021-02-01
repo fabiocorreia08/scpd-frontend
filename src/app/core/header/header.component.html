@@ -1,0 +1,32 @@
+<header>   
+
+    <nav class="navbar navbar-expand-md color-header height-header">
+        <div class="container">
+            
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3><a href="/home">SCPD</a></h3>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 margin-top-descricao-projeto margin-bottom-descricao-projeto">
+                        <a href="/home">Rotina de Inserção de Solicitações</a>
+                    </div>
+                  </div>
+            </div>                  
+        
+        <ul class="pull-md-center col-lg-5 col-md-4 col-sm-3 margin-logo" style='text-align:right'>
+            <li  class="list-inline-item">
+                <img  src="assets/img/logo-cmb-logomarca.png" alt="">
+            </li>
+        </ul>        
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li>
+                <h4 *ngIf="isLoggedIn" class="font-usuario-info">Olá {{username}}!</h4>
+                <a *ngIf="isLoggedIn" class="nav-link font-sair margin-sair" href="/login" (click)=handleLogout()>SAIR</a>
+            </li>
+        </ul>
+        </div>        
+    </nav>
+</header>

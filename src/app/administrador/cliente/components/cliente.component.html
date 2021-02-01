@@ -1,0 +1,66 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">              
+      
+      <!--NavBar-->
+      <scpd-navbar></scpd-navbar>
+      <!-- conteudo -->      
+
+      <div class="conteudo col-md-12" style="min-height: 580px; padding-bottom: 60px">
+        
+        <section class="col-md-12 margin-top-section">
+          <h4>Clientes</h4>
+        </section>
+    
+        <div class="container">
+          <section>
+          <div class="col-md-11 center-block pull-md-none margin-top-corpo margin-bottom-corpo">            
+            <form>
+              <div class="form-row align-items-center">                 
+                <div class="col-auto">
+                  <label class="sr-only" for="cliente">Cliente</label>
+                  <input type="text" class="form-control mb-2" id="cliente" placeholder="cliente">
+                </div>              
+                <div class="col-auto">
+                  <button (click)="buscarCliente()" class="btn btn-primary mb-2">Pesquisar</button>
+                </div>
+              </div>
+            </form>
+          </div> 
+          </section>
+          <section>
+            <div>
+
+              <p-table #dt1 [value]="clientes" dataKey="id"
+              [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading" styleClass="p-datatable-customers p-datatable-gridlines"
+              [paginator]="true">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th style="width: 35px;">#</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>                        
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-cliente>
+                    <tr>
+                      <td>{{cliente.id}}</td>
+                      <td>{{cliente.nome}}</td>
+                      <td>{{cliente.sobrenome}}</td>                      
+                    </tr>
+                </ng-template>
+            </p-table>
+
+            </div>
+          </section>
+
+        </div>       
+         
+      </div>
+  
+    <!-- Rodape -->
+    <cea-footer></cea-footer>
+  
+    </div>
+  </div>
+  <!-- /.container -->
+

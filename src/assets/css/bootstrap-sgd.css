@@ -1,0 +1,44 @@
+/******* Sucesso *******/
+.alert-success
+{
+	background-color: #5cb85c !important;
+
+	border-color: #5beeb2 !important;
+	
+	font-size: 0.9em !important;
+
+	color: white !important;
+
+	font-weight: bold !important;
+}
+
+
+/******* Alerta *******/
+.alert-warning
+{
+	background-color: #ea9600 !important;
+
+	border: 1px #f2d252 solid !important;
+
+	font-size: 0.9em !important;
+
+	color: white !important;
+
+}
+
+/******* Error *******/
+.alert-error
+{
+	background-color: #f04864 !important;
+
+	border-color: #ff9faf !important;
+
+	font-size: 0.9em !important;
+
+	color: white !important;
+}
+
+.mensagem-alerta  .close
+{
+	top: -16px !important;
+}

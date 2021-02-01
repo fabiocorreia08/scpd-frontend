@@ -1,0 +1,127 @@
+/******* nav *******/
+.navbar-principal {
+	background-color: #0d77ca;
+	padding: 0;
+	/*border-top: 1px #00aeff solid;*/
+	border-radius: 0;
+	box-shadow: 12px 12px 25px rgba(0, 0, 0, .2);
+	clear: both;
+}
+
+.navbar-principal .nav-item {
+	padding: .1rem 1rem !important;
+}
+
+.navbar-principal .nav-item a {
+	color: rgba(0,0,0,.9);
+}
+
+.navbar-principal .nav-item.active {
+	font-weight: 800;
+}
+
+.navbar-nav .nav-item+.nav-item {
+	margin-left: .9em;
+}
+
+.navbar-nav .nav-item:hover {
+	background-color: #6294b7;
+}
+
+.nav-link {
+    color: rgba(0,0,0,.9);
+}
+
+.nav-item-first {
+	margin-left: 1em;
+}
+
+/******* Responsive Menu mobile *******/
+.navbar-principal .navbar-toggler {
+	color: white;
+	width: 100%;
+	padding: 0.7em;
+	text-align: left;
+}
+
+.navbar-principal .navbar-toggler[aria-expanded="true"] {
+	opacity: 0.5;
+}
+
+.margin-top-navbar {
+    margin-top: 1.5rem;
+}
+
+.margin-bottom-navbar {
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.dropdown, .dropup {
+    position: relative;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
